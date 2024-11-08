@@ -14,12 +14,12 @@
     --font-size-xx-large: 4.8rem;
 }
 
-html {
+html{
     scroll-behavior: smooth;
     font-size: 62.5%;
 }
 
-body, a {
+body, a{
     color: var(--text-color);
 }
 
