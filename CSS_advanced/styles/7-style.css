@@ -35,10 +35,10 @@ h1, h2, h3, h4, h5, h6{
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
 }
+
 .visually-hidden{
     display: none;
 }
-
 
 .section-tagline, .card-category {
     color: var(--color-primary); 
