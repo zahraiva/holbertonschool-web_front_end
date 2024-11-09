@@ -74,6 +74,15 @@ a:visited {
     font-style: italic;
 }
 
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    background-color: var(--color-light-grey);
+}
+
 .button{
     display: var(--button-display);
     padding: var(--button-padding);
@@ -88,16 +97,6 @@ a:visited {
     text-decoration: var(--button-hover-text-decoration);
     background-color: var(--button-hover-background);
 }
-
-a:hover {
-    text-decoration: underline;
-}
-
-a:active {
-    background-color: var(--color-light-grey);
-}
-
-
 
 .navbar-menu {
     float: right;
@@ -207,9 +206,9 @@ ul.row {
     width: 50%;
 }
 
-[class^="col-"]{
+[class^="col-"] {
     float: left;
-    padding: 0.5rem;
+    padding: 0.5rem;  
 }
 
 .footer-copyright {
@@ -223,10 +222,11 @@ ul.row {
 }
 
 [data-section-theme="dark"] {
-    --text-color: var(--color-white);          
-    --section-title-color: var(--color-white); 
-    background-color: var(--color-black);   
-  }
+    --text-color: var(--color-white);
+    --section-title-color: var(--color-white);
+    background-color: var(--color-black);
+    --button-color: var(--color-white);
+}
 
 .footer-address {
     color: var(--text-color);
@@ -240,17 +240,17 @@ ul.row {
     fill: var(--text-color);
 }
 
-.card-services .card-title {
+.card-services .card-title{
     margin: 0;
 }
 
-.card-services a {
+.card-services a{
     display: block;
     padding: 2rem;
     background-color: var(--color-light-grey);
 }
 
-.card-services a:hover {
+.card-services a:hover{
     color: var(--color-white);
     background-color: var(--color-primary);
     text-decoration: none;
