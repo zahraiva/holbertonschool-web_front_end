@@ -341,7 +341,7 @@ ul.row {
     height: 30rem;
     width: 100%;
     object-fit: cover;
-    vertical-align: bottom;
+    vertical-align: bottom;    
 }
   
 .card-work .card-inner {
@@ -350,6 +350,7 @@ ul.row {
     left: -0.1rem;
     right: -0.1rem;
     z-index: 1;
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
   
 .card-work:hover .card-inner {
@@ -381,13 +382,4 @@ ul.row {
   
 .card-work:hover .card-title {
     opacity: 1;
-}
-
-.card-work:hover .card-image {
-    transform: scale(1.2);
-    transition: transform var(--transition-duration) var(--transition-cubic-bezier);
-}
-
-.card-work:hover .card-outer{
-    transform: scale(0.95);
 }
