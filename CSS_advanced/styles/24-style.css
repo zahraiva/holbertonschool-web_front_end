@@ -226,7 +226,7 @@ ul.row {
 }
 
 .card-services .a:hover {
-    columns: var(--color-primary);
+    color: var(--color-primary);
     background-color: var(--color-primary);
     text-decoration: none;
 }
