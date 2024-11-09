@@ -95,10 +95,6 @@ h1, h2, h3, h4, h5, h6{
     padding: var(--section-footer-padding);
 }
 
-.footer{
-    padding: var(--footer-padding);
-}
-
 .section-tagline, .card-category {
     color: var(--color-primary); 
 }
@@ -122,4 +118,8 @@ h1, h2, h3, h4, h5, h6{
     width: 960px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.footer{
+    padding: var(--footer-padding);
 }
