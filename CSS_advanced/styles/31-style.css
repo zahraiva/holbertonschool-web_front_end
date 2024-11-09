@@ -52,6 +52,8 @@
     --header-logo-link-position: absolute;
     --header-logo-link-top: -1rem;
     --header-logo-link-left: 0;
+    --transition-duration: .3s;
+    --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 
 *, *:before, *:after {
@@ -98,10 +100,12 @@ a:active {
     text-decoration: var(--button-text-decoration);
 }
 
-.button:hover{
+.button:hover {
     color: var(--button-hover-color);
     text-decoration: var(--button-hover-text-decoration);
-    background-color: var(--button-hover-background);
+    background: var(--button-hover-background);
+    transition-duration: var(--transition-duration);
+    transition-property: color, background-color;
 }
 
 .navbar-menu {
@@ -126,7 +130,7 @@ a:active {
     color: var(--nav-item-link-hover);
 }
 
-.nav .nav-link::before{
+.nav .nav-link::before {
     content: "";
     position: absolute;
     top: 0;
@@ -134,9 +138,10 @@ a:active {
     background-color: var(--color-white);
     width: 0;
     height: 0.2rem;
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
   
-.nav .nav-item:hover .nav-link::before{
+.nav .nav-item:hover .nav-link::before {
     background-color: var(--color-primary);
     width: 100%;
 }
@@ -377,3 +382,13 @@ ul.row {
 .card-work:hover .card-title {
     opacity: 1;
 }
+
+.card-work:hover .card-image{
+    transform: scale(1.2);
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+.card-work:hover .card-outer{
+    transform: scale(0.95);
+}
+
